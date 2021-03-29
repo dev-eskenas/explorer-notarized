@@ -231,7 +231,7 @@ h6,
 }
 
 .navbar-form .form-control {
-  background-color: #786c3c;
+  background-color: #766f82;
   border-radius: 3px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -305,7 +305,7 @@ h6,
 .col-gray {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
-  background-color: #f4f4f4;
+  background-color: #d1cbd0;
   border-radius: 5px;
   padding: 14px;
   border: 1px solid #eee;
@@ -421,7 +421,7 @@ h6,
 }
 
 .btn-default {
-  background-color: #e7e7e7;
+  background-color: #8C41FF;
 }
 
 .btn-success {
@@ -814,7 +814,7 @@ a.v_highlight_more {
 
 .secondary_navbar {
   width: 100%;
-  background: #fff;
+  background: #cfbbed;
   position: fixed;
   top: 64px;
   left: 0;
@@ -1012,4 +1012,39 @@ a.v_highlight_more {
 
 .subIntro {
   font-size: 16px;
+}
+
+/*extra css
+------------------------- */
+
+.ad {
+    background-color: #cfbbed;
+}
+
+body {
+    background-color: #e7e1f0;
+}
+
+.well{
+    background-color: #d2cade;
+}
+
+.text-muted {
+    color: #39363d;
+}
+
+.block-tx {
+    background-color: #dacfe8;
+}
+
+.panel {
+    background-color: #dcdae0;
+}
+
+.txvalues-not-notarized {
+    background-color: #cfa5ca;
+}
+
+a {
+    color: #402478;
 }
