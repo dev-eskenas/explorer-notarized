@@ -149,7 +149,7 @@ h6,
 
 .table-hover > tbody > tr:hover > td,
 .table-hover > tbody > tr:hover > th {
-  background-color: #f0f7e2;
+  background-color: #b2a3c9;
 }
 .navbar {
   min-height: 64px;
@@ -231,7 +231,7 @@ h6,
 }
 
 .navbar-form .form-control {
-  background-color: #766f82;
+  background-color: #534f59;
   border-radius: 3px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -417,11 +417,11 @@ h6,
 .btn-default:active,
 .btn-default.active,
 .open .dropdown-toggle.btn-default {
-  background-color: #fff;
+  background-color: #bda9db;
 }
 
 .btn-default {
-  background-color: #8C41FF;
+  background-color: #a26df2;
 }
 
 .btn-success {
@@ -1047,4 +1047,8 @@ body {
 
 a {
     color: #402478;
+}
+
+.form-control {
+    background-color: #534f59;
 }
