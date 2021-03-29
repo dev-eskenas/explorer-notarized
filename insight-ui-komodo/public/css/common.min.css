@@ -38,7 +38,7 @@ h6,
 
 /* Styling for the ngProgress itself */
 #ngProgress {
-  background-color: #6c9032 !important;
+  background-color: #4f1b9e !important;
   box-shadow: none !important;
   color: #373d42 !important;
   height: 3px !important;
@@ -168,13 +168,13 @@ h6,
 }
 
 .navbar-default {
-  background-color: #ccded5;
+  background-color: #a585d6;
   margin: 0;
   border: 0;
 }
 
 .navbar-default .navbar-nav > li > a {
-  color: #346464;
+  color: #4f1b9e;
   font-family: "Ubuntu", sans-serif;
   padding-left: 20px;
   padding-right: 20px;
@@ -231,7 +231,7 @@ h6,
 }
 
 .navbar-form .form-control {
-  background-color: #bdc7c2;
+  background-color: #786c3c;
   border-radius: 3px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -288,7 +288,7 @@ h6,
 .status {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
-  background-color: #346464;
+  background-color: #8C41FF;
   border-radius: 3px;
   margin: 15px 0;
   padding: 8px 10px;
@@ -388,8 +388,8 @@ h6,
   border-radius: 2px;
 }
 .btn-primary {
-  background-color: #8dc429;
-  border: 2px solid #76af0f;
+  background-color: #8C41FF;
+  border: 2px solid #4f1b9e;
 }
 
 .btn-primary:hover,
@@ -472,7 +472,7 @@ h6,
   font-weight: normal;
 }
 .progress-bar-info {
-  background-color: #8dc429;
+  background-color: #533482;
 }
 
 /* Set the fixed height of the footer here */
