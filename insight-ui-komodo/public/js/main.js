@@ -1,6 +1,6 @@
 // Source: public/src/js/app.js
 var testnet = false;
-var netSymbol = testnet ? 'TAZ' : 'KMD';
+var netSymbol = testnet ? 'TAZ' : 'ESKN';
 
 var defaultLanguage = localStorage.getItem('insight-language') || 'en';
 var defaultCurrency = localStorage.getItem('insight-currency') || netSymbol;
@@ -48,7 +48,7 @@ angular
   .module("insight.ad")
   .controller("AdController", function ($scope, $http) {
     $http
-      .get("https://kmd-data.s3.us-east-2.amazonaws.com/info/ecosystem.json")
+      .get("https://kmd1-data.s3.us-east-2.amazonaws.com/info/ecosystem.json")
       .success(function (data, status, headers, config) {
         ads = {};
         priorities = {};
