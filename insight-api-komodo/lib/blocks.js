@@ -371,11 +371,11 @@ BlockController.prototype.getBlockReward = function (height) {
   var subsidy = 0;
 
 
-  if (height =1) {
+  if (height == 1) {
     subsidy = 0.0835254;
   } else if (height < 64) {
     subsidy = 0.00001 ;
-  } else if (height = 64) {
+  } else if (height == 64) {
     subsidy = 1921160;
   } else if (height < 143) {
     subsidy = 2000000;
