@@ -368,9 +368,45 @@ BlockController.prototype.formatTimestamp = function (date) {
 };
 
 BlockController.prototype.getBlockReward = function (height) {
-  var subsidy = new BN(3 * 1e8);
+  var subsidy = 0;
+
+
+  if (height =1) {
+    subsidy = 0.0835254;
+  } else if (height < 64) {
+    subsidy = 0.00001 ;
+  } else if (height = 64) {
+    subsidy = 1921160;
+  } else if (height < 143) {
+    subsidy = 2000000;
+  } else if (height < 525000) {
+    subsidy = 0.01;
+  } else if (height < 1050000) {
+    subsidy = 0.02;
+  } else if (height < 1575000) {
+    subsidy = 0.03;
+  } else if (height < 2100000) {
+    subsidy = 0.04;
+  } else if (height < 2625000) {
+    subsidy = 0.05;
+  } else if (height < 3150000) {
+    subsidy = 10;
+  } else if (height >= 3150000) {    
+    var halvings = Math.floor((height - 2625000) / 525000);
+    subsidy = 10
+    for (let i = 1; i <= halvings; i++) {
+      subsidy = subsidy*(1/2);
+    }
+  }
 
   /* Commented by Decker
+
+  1st year -> 0.01 
+2 -> 0.02
+3 -> 0.03
+4 -> 0.04
+5 -> 0.05
+
 
   // Mining slow start
   // The subsidy is ramped up linearly, skipping the middle payout of
@@ -396,6 +432,9 @@ BlockController.prototype.getBlockReward = function (height) {
   // Subsidy is cut in half every 840,000 blocks which will occur approximately every 4 years.
   subsidy = subsidy.shrn(halvings); 
   */
+
+  var subsidy = new BN(subsidy * 1e8);
+
 
   return parseInt(subsidy.toString(10));
 };
